@@ -1,0 +1,155 @@
+body{
+	text-rendering: optimizelegibility;
+
+	background-color: #FFF;
+	color: #222;
+
+	font-family: 'Lato', 'Helvetica Neue', Helvetica;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+ *
+ * SECTIONS
+ *
+ *
+ */
+
+section{
+}
+
+
+section.splash{
+	height: 400px;
+	color: white;
+	background-color: #60C4CB;
+}
+
+.splash .menu{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #AF9;
+	padding-right: 0;
+}
+
+section.white{
+	color: #222;
+	background-color: white;
+}
+
+section.white h1{
+	color: #13A5AF;
+}
+
+
+section.light{
+	color: white;
+	background-color: #93DEE3;
+}
+
+section.medium{
+	color: white;
+	background-color: #60C4CB;
+}
+
+
+
+
+/*
+ *
+ * GENERAL
+ *
+ *
+ */
+
+#content{
+
+}
+
+ul{
+	padding-left: 0;
+}
+
+li{
+	list-style: none;
+}
+
+.jumbotron{
+	background-color: transparent;
+}
+
+
+/*
+ *
+ *
+ *	BUTTONS
+ *
+ *
+ */
+
+button{
+	text-transform: uppercase;
+}
+
+.btn-yellow{
+	color: white;
+	background-color: #FEBF75;
+}
+
+.btn-white{
+	color: #FEBF75;
+	background-color: white;
+}
+
+.btn-red{
+	color: white;
+	background-color: #F57068;
+}
+
+.btn-round-left{
+	border-top-left-radius: 24px;
+	border-bottom-left-radius: 24px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+
+.btn-round{
+	border-radius: 24px;
+}
+
+
+
+
+/*
+ *
+ *
+ *	NAVIGATION
+ *
+ *
+ */
+
+.navbar{
+	background-color: #FFF;
+	border: none;
+}
+
+.navbar .navbar-nav>li>a{
+	color: #13A5AF;
+}
+
+
+
+/*
+ *
+ *
+ *	FOOTER
+ *
+ *
+ */
+
+footer{
+	color: white;
+	background-color: #24A1AC;
+}
