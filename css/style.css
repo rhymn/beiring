@@ -17,6 +17,8 @@ body{
  */
 
 section{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 
@@ -29,9 +31,13 @@ section.splash{
 .splash .menu{
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-color: #AF9;
 	padding-right: 0;
 }
+
+.splash .menu button{
+	margin-bottom: 6px;
+}
+
 
 section.white{
 	color: #222;
@@ -133,6 +139,13 @@ button{
 .navbar{
 	background-color: #FFF;
 	border: none;
+	margin-top: 20px;
+}
+
+@media(min-width:768px){
+	.navbar{
+		margin-right: 100px;	
+	}
 }
 
 .navbar .navbar-nav>li>a{
@@ -152,4 +165,8 @@ button{
 footer{
 	color: white;
 	background-color: #24A1AC;
+}
+
+footer a{
+	color: white;
 }

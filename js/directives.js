@@ -12,6 +12,7 @@ angular.module('bDirectives', [])
 .directive('contactForm', ['$rootScope', '$location', function($rootScope, $location) {
 	return {
 		restrict: 'A',
+		templateUrl: 'partials/directives/contactform.html',
 		controller: function($scope){
 			$scope.isDone = false;
 		},
