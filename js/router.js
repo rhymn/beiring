@@ -11,6 +11,9 @@ angular.module('bRouter', [
 			when('/om', {
 				templateUrl: 'partials/about.html'
 			}).
+			when('/behandlingar', {
+				templateUrl: 'partials/behandlingar.html'
+			}).
 			otherwise({
 				redirectTo: '/'
 			});

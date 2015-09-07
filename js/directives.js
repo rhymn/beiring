@@ -9,35 +9,20 @@ angular.module('bDirectives', [])
 	}
 }])
 
-.directive('contactForm', ['$rootScope', '$location', function($rootScope, $location) {
+.directive('contactVertical', ['$rootScope', '$location', function($rootScope, $location) {
 	return {
 		restrict: 'A',
-		templateUrl: 'partials/directives/contactform.html',
-		controller: function($scope){
-			$scope.isDone = false;
-		},
-
+		templateUrl: 'partials/directives/contactform-vertical.html',
 		link: function($scope, $element, $attr){
-			$element.css({
-				display: 'none'
-			});
+		}
+	}
+}])
 
-			$rootScope.$on('message', function(obj, message){
-				console.log(message);
-				$scope.text = message;
-
-				$element.css({
-					display: 'block'
-				});
-
-				setTimeout(function(){
-					$element.css({
-						display: 'none'
-					});
-				}, 5000);
-
-			});
+.directive('contactHorizontal', ['$rootScope', '$location', function($rootScope, $location) {
+	return {
+		restrict: 'A',
+		templateUrl: 'partials/directives/contactform-horizontal.html',
+		link: function($scope, $element, $attr){
 		}
 	}
 }]);
-

@@ -16,16 +16,45 @@ body{
  *
  */
 
-section{
+.opaque{
+	background-color: rgba(96, 196, 203, 0.6);
+	min-height: 500px;
+}
+
+
+section, footer{
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
 
+@media(min-width:768px){
+	section{
+		padding-left: 200px !important;
+		padding-right: 200px !important;
+	}
+}
+
+section div.jumbotron{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+
+
+.form-container{
+	max-width: 300px;
+}
+
 
 section.splash{
-	height: 400px;
+	padding-top: 0;
+	padding-bottom: 0;
+	min-height: 500px;
 	color: white;
 	background-color: #60C4CB;
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .splash .menu{
@@ -37,6 +66,18 @@ section.splash{
 .splash .menu button{
 	margin-bottom: 6px;
 }
+
+section.mouth{
+	padding-top: 0;
+	padding-bottom: 0;
+	min-height: 500px;
+	color: white;
+	background-color: #60C4CB;
+	background-image: url(../img/mouth.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 
 
 section.white{
@@ -69,8 +110,7 @@ section.medium{
  *
  */
 
-#content{
-
+form{
 }
 
 ul{
@@ -83,6 +123,24 @@ li{
 
 .jumbotron{
 	background-color: transparent;
+}
+
+
+.tile{
+}
+
+.tile h3{
+	color: #13A5AF;
+}
+
+.tile .box{
+	background-color: #DDD;	
+	height: 150px;
+	max-width: 300px;
+}
+
+.tile .caption{
+	margin-top: 20px;
 }
 
 
@@ -135,6 +193,12 @@ button{
  *
  *
  */
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover{
+	border: none;
+	background-color: #FFF;
+}
 
 .navbar{
 	background-color: #FFF;
