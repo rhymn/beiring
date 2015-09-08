@@ -8,11 +8,23 @@ angular.module('bRouter', [
 				templateUrl: 'partials/start.html',
 				controller: 'StartCtrl'
 			}).
-			when('/om', {
-				templateUrl: 'partials/about.html'
+			when('/akut', {
+				templateUrl: 'partials/akut.html'
 			}).
 			when('/behandlingar', {
 				templateUrl: 'partials/behandlingar.html'
+			}).
+			when('/tandreglering', {
+				templateUrl: 'partials/tandreglering.html'
+			}).
+			when('/vardgivare', {
+				templateUrl: 'partials/vardgivare.html'
+			}).
+			when('/priser', {
+				templateUrl: 'partials/priser.html'
+			}).
+			when('/om', {
+				templateUrl: 'partials/about.html'
 			}).
 			otherwise({
 				redirectTo: '/'

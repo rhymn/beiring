@@ -9,6 +9,8 @@ body{
 	-webkit-font-smoothing: antialiased;
 }
 
+
+
 /*
  *
  * SECTIONS
@@ -27,19 +29,15 @@ section, footer{
 	padding-bottom: 5rem;
 }
 
-@media(min-width:768px){
-	section{
-		padding-left: 200px !important;
-		padding-right: 200px !important;
-	}
-}
-
 section div.jumbotron{
-	max-width: 800px;
 	margin: 0 auto;
 }
 
 
+.narrow{
+	max-width: 900px;	
+	margin: 0 auto;
+}
 
 .form-container{
 	max-width: 300px;
@@ -95,11 +93,42 @@ section.light{
 	background-color: #93DEE3;
 }
 
+
+.light h1, 
+.light h2, 
+.light h3, 
+.light h4, 
+.light h5,
+.light i,
+.dark-text{
+	color: #13A5AF;
+} 
+
+.light-text{
+	color: white !important;
+} 
+
+
 section.medium{
 	color: white;
 	background-color: #60C4CB;
 }
 
+
+/*
+ * COLLAPSE
+ *
+ *
+ */
+.panel,
+.panel, .panel-default>.panel-heading,
+.panel-collapse>.panel-body,
+.panel-group .panel-heading+.panel-collapse>.panel-body{
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	padding-left: 0;
+}
 
 
 
@@ -109,6 +138,11 @@ section.medium{
  *
  *
  */
+
+a{
+	text-decoration: none !important;
+}
+
 
 form{
 }
@@ -154,6 +188,9 @@ li{
 
 button{
 	text-transform: uppercase;
+	box-shadow: none !important;
+	border: none;
+
 }
 
 .btn-yellow{
@@ -184,6 +221,15 @@ button{
 }
 
 
+
+/*
+ *
+ *
+ */
+input, textarea, select{
+	box-shadow: none !important;
+	border: none !important;	
+}
 
 
 /*

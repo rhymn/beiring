@@ -16,7 +16,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li>
+        <li ng-class="{ active: (isActive('/akut'))}">
         	<a href="#akut">Akut</a>
         </li>
 
@@ -24,16 +24,16 @@
         	<a href="#behandlingar">Behandlingar</a>
         </li>
 
-        <li>
+        <li ng-class="{ active: (isActive('/tandreglering'))}">
         	<a href="#tandreglering">Tandreglering</a>
         </li>
 
-        <li>
-        	<a href="#">Vårdgivare</a>
+        <li ng-class="{ active: (isActive('/vardgivare'))}">
+        	<a href="#vardgivare">Vårdgivare</a>
         </li>
 
-        <li>
-        	<a href="#">Priser</a>
+        <li ng-class="{ active: (isActive('/priser'))}">
+        	<a href="#priser">Priser</a>
         </li>
 
         <li ng-class="{ active: (isActive('/om'))}">
