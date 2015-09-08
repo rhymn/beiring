@@ -9,6 +9,25 @@ angular.module('bDirectives', [])
 	}
 }])
 
+
+.directive('akutForm', ['$rootScope', '$location', function($rootScope, $location) {
+	return {
+		restrict: 'A',
+		templateUrl: 'partials/directives/akut-form.html',
+		link: function($scope, $element, $attr){
+		}
+	}
+}])
+
+.directive('callMeForm', ['$rootScope', '$location', function($rootScope, $location) {
+	return {
+		restrict: 'A',
+		templateUrl: 'partials/directives/call-me-form.html',
+		link: function($scope, $element, $attr){
+		}
+	}
+}])
+
 .directive('contactVertical', ['$rootScope', '$location', function($rootScope, $location) {
 	return {
 		restrict: 'A',
