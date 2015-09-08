@@ -14,6 +14,9 @@ angular.module('bRouter', [
 			when('/behandlingar', {
 				templateUrl: 'partials/behandlingar.html'
 			}).
+			when('/behandlingar/bettskena', {
+				templateUrl: 'partials/bettskena.html'
+			}).
 			when('/tandreglering', {
 				templateUrl: 'partials/tandreglering.html'
 			}).
