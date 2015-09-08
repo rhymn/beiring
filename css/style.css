@@ -142,6 +142,10 @@ a{
 	text-decoration: none !important;
 }
 
+a[href^="tel:"]{
+	color: inherit !important;
+	background-color: inherit !important;
+}
 
 form{
 }
