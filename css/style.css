@@ -56,9 +56,8 @@ section.splash{
 }
 
 .splash .menu{
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-right: 0;
+	position: fixed;
+	right: 0;
 }
 
 .splash .menu button{
