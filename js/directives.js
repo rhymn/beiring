@@ -8,11 +8,11 @@ angular.module('bDirectives', [])
 				return viewLocation == $location.path();
 			}
 
-			element.on('click', function(){
-				// $(element).collapse('hide');
-				console.log('Clicky');
+			// Use jQuery instead of jQLite by using the $ here..
+			$(element).on('click', 'a', function(){
+				console.log('Closing menu');
+				$('#collapsing-menu').collapse('hide');
 			});
-
 		}
 	}
 }])
