@@ -55,12 +55,13 @@ section.splash{
 	background-size: cover;
 }
 
-.splash .menu{
+.menu{
 	position: fixed;
 	right: 0;
+	top: 100px;
 }
 
-.splash .menu button{
+.menu button{
 	margin-bottom: 6px;
 }
 
@@ -282,11 +283,6 @@ body { padding-top: 90px; }
 	padding-bottom: 20px;
 }
 
-@media(min-width:768px){
-	.navbar{
-		padding-right: 100px;	
-	}
-}
 
 .navbar a{
 	color: #13A5AF !important;

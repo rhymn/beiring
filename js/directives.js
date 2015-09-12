@@ -2,9 +2,17 @@ angular.module('bDirectives', [])
 
 
 .directive('navigation', ['$location', function($location) {
-	return function(scope, element, attrs) {
-		scope.isActive = function(viewLocation){
-			return viewLocation == $location.path();
+	return {
+		link: function(scope, element) {
+			scope.isActive = function(viewLocation){
+				return viewLocation == $location.path();
+			}
+
+			element.on('click', function(){
+				// $(element).collapse('hide');
+				console.log('Clicky');
+			});
+
 		}
 	}
 }])
