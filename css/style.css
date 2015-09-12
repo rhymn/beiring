@@ -209,6 +209,12 @@ li{
  *
  */
 
+/* Chrome FFS */
+a, button, a:focus, button:focus{
+	outline: 0 !important;
+	text-decoration: none !important;
+}
+
 button{
 	text-transform: uppercase;
 	box-shadow: none !important;
