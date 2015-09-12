@@ -288,6 +288,9 @@ body { padding-top: 90px; }
 	color: #13A5AF !important;
 }
 
+.navbar-brand{
+	padding: 5px;
+}
 
 
 /*
