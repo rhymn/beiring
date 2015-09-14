@@ -12,8 +12,8 @@ var beiring = angular.module('beiring', [
 		}
 	});
 
-     $rootScope.$on('$routeChangeSuccess', function () {
-         $window.scrollTo(0,0);
-     });
+	$rootScope.$on('$routeChangeSuccess', function () {
+		$window.scrollTo(0,0);
+	});
 }]);
 
