@@ -1,19 +1,19 @@
 <form class="row">
 	<div class="col-md-4">
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Namn" name="namn" />
+			<input type="text" class="form-control" ng-model="user.name" placeholder="Namn" name="namn" />
 		</div>
 	</div>
 
 	<div class="col-md-4">
 		<div class="form-group">
-			<input type="tel" class="form-control" placeholder="Telefonnummer" name="telefon" />
+			<input type="tel" class="form-control" ng-model="user.phone" placeholder="Telefonnummer" name="telefon" />
 		</div>
 	</div>
 
 	<div class="col-md-4">
 		<div class="form-group">
-			<button type="submit" ng-click="" class="btn btn-yellow form-control">Ring mig</button>
+			<button type="submit" ng-click="submit(user)" class="btn btn-yellow form-control">Ring mig</button>
 		</div>
 	<div>
 </form>

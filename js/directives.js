@@ -27,11 +27,24 @@ angular.module('bDirectives', [])
 	}
 }])
 
-.directive('callMeForm', ['$rootScope', '$location', function($rootScope, $location) {
+.directive('callMeForm', ['$rootScope', '$location', '$http', function($rootScope, $location, $http) {
 	return {
 		restrict: 'A',
 		templateUrl: 'partials/directives/call-me-form.html',
 		link: function($scope, $element, $attr){
+			$scope.submit = function(user){
+				$http
+					.post('http://www.beiringtandklinik.se/newsite/form.php')
+					.then(function(response) {
+						console.log(response.data);
+						$scope.status = response.status;
+						$scope.data = response.data;
+					}, function(response) {
+						console.log(response.data);
+						$scope.data = response.data || "Request failed";
+						$scope.status = response.status;
+					});
+			}
 		}
 	}
 }])
