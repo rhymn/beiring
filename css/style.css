@@ -118,6 +118,27 @@ section.medium{
 	background-color: #60C4CB;
 }
 
+.chair-1{
+	padding: 50px 50px 50px 0;
+	margin-left: -70px;
+}
+
+
+.chair-2{
+	padding: 50px 0 50px 50px;
+}
+
+.person{
+
+}
+
+.person h4{
+	color: #13A5AF;	
+}
+
+.person img{
+	
+}
 
 /*
  * COLLAPSE
