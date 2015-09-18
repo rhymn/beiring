@@ -32,6 +32,33 @@ angular.module('bRouter', [
 			when('/om', {
 				templateUrl: 'partials/about.html'
 			}).
+			when('/behandlingar/forebyggande-tandvard-och-tandhygienist', {
+				templateUrl: 'partials/forebyggande-tandvard-och-tandhygienist.html'
+			}).
+			when('/behandlingar/allman-tandvard', {
+				templateUrl: 'partials/allman-tandvard.html'
+			}).
+			when('/behandlingar/tandblekning', {
+				templateUrl: 'partials/tandblekning.html'
+			}).
+			when('/behandlingar/visdomtandskirurgi', {
+				templateUrl: 'partials/visdomtandskirurgi.html'
+			}).
+			when('/behandlingar/tandimplantat', {
+				templateUrl: 'partials/tandimplantat.html'
+			}).
+			when('/behandlingar/tandreglering', {
+				templateUrl: 'partials/tandreglering.html'
+			}).
+			when('/behandlingar/estetisk-tandvard', {
+				templateUrl: 'partials/estetisk-tandvard.html'
+			}).
+			when('/behandlingar/tandvardsradsla', {
+				templateUrl: 'tandvardsradsla.html'
+			}).
+
+
+
 			otherwise({
 				redirectTo: '/'
 			});

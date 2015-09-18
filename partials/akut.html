@@ -1,5 +1,46 @@
 <section class="light container-fluid">
 	<div class="narrow">
-		<h3>Akut</h3>
+		<h2>Akut tandvård i Göteborg - ring 031 13 83 04</h2>
+
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Har oturen varit framme och en tandvärk kommit akut eller har du haft ont en längre tid?</h3>
+				
+				</br>
+					<h3 ng-show="success" class="text-center">
+						Tack, vi kontaktar dig snarast!
+					</h3>
+
+					<h4>Fyll i dina uppgifter så ringer vi upp dig snarast!</h4>
+
+					<form>
+						<div class="form-group">
+							<input type="text" class="form-control" ng-model="user.namn" placeholder="Namn" name="namn" />
+						</div>
+
+						<div class="form-group">
+							<input type="tel" class="form-control" ng-model="user.telefon" placeholder="Telefonnummer" name="telefon" />
+						</div>
+
+						<div class="form-group">
+							<input type="text" class="form-control" ng-model="user.personnummer" placeholder="Personnummer" name="pnr" />
+						</div>
+
+						<div class="form-group">
+							<input type="email" class="form-control" ng-model="user.epost" placeholder="E-post" name="epost" />
+						</div>
+
+
+						<div class="form-group">
+							<button type="submit" ng-click="submit(user)" class="btn btn-red form-control">Ring mig</textarea>
+						</div>
+					</form>
+
+					<p>Vi försöker alltid att finnas tillgängliga för akuttider för att så snabbt som möjligt kunna åtgärda orsaken till ditt problem, då vi vet att detta kan skapa en enorm smärta och obehag för dig som patient. På akuttider diagnosticerar vi och hittar orsaken till din tandvärk eller ditt problem. </p>
+					<p>Kostnaden för ett akutbesök är individuellt baserat på hur stort problemet är och om det är ett eller flera problem. Men man får räkna med att det oftast börjar runt ca 1000:- och uppåt.</p>
+			</div>
+
+		
+		</div>
 	</div>
 </section>

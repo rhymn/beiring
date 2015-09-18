@@ -289,6 +289,16 @@ body { padding-top: 90px; }
 	padding-bottom: 20px;
 }
 
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover{
+	background-color: transparent;
+	color: #ffc075 !important;
+}
+
+.navbar a:hover{
+	color: #ffc075 !important;
+}
 
 .navbar a{
 	color: #13A5AF !important;
