@@ -65,6 +65,10 @@ section.splash{
 	margin-bottom: 6px;
 }
 
+.menu-padding{
+	padding-right: 120px;
+}
+
 section.mouth{
 	padding-top: 0;
 	padding-bottom: 0;
@@ -222,6 +226,11 @@ button{
 
 }
 
+.btn.disabled, .btn[disabled]{
+	color: #222;
+}
+
+
 .btn-yellow{
 	color: white;
 	background-color: #FEBF75;
@@ -287,6 +296,7 @@ body { padding-top: 90px; }
 	border: none;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	border-bottom: 1px solid #AAA;
 }
 
 .navbar-default .navbar-nav>.active>a, 

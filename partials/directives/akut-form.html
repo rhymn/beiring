@@ -1,10 +1,10 @@
+<h4>Fyll i dina uppgifter så ringer vi upp dig snarast!</h4>
+
 <h3 ng-show="success" class="text-center">
 	Tack, vi kontaktar dig snarast!
 </h3>
 
-<h4>Fyll i dina uppgifter så ringer vi upp dig snarast!</h4>
-
-<form>
+<form ng-hide="success" name="form">
 	<div class="form-group">
 		<input type="text" class="form-control" ng-model="user.namn" placeholder="Namn" name="namn" />
 	</div>
@@ -23,6 +23,6 @@
 
 
 	<div class="form-group">
-		<button type="submit" ng-click="submit(user)" class="btn btn-red form-control">Ring mig</textarea>
+		<button type="submit" ng-click="submit(user)" class="btn btn-red form-control" ng-disabled="form.epost.$pristine || form.epost.$dirty && form.epost.$invalid">Ring mig</textarea>
 	</div>
 </form>

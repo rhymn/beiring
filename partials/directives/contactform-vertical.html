@@ -1,5 +1,8 @@
+<h3 ng-show="success" class="text-center">
+	Tack, vi återkommer!
+</h3>
 
-<form>
+<form ng-hide="success">
 	<div class="form-group">
 		<input type="text" class="form-control" ng-model="user.namn" placeholder="Namn" name="namn" />
 	</div>
@@ -28,7 +31,3 @@
 		<button type="submit" ng-click="submit(user)" class="btn btn-yellow form-control">Kontakta oss</textarea>
 	</div>
 </form>
-
-<h3 ng-show="success" class="text-center">
-	Tack, vi återkommer!
-</h3>

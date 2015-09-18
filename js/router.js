@@ -54,7 +54,7 @@ angular.module('bRouter', [
 				templateUrl: 'partials/estetisk-tandvard.html'
 			}).
 			when('/behandlingar/tandvardsradsla', {
-				templateUrl: 'tandvardsradsla.html'
+				templateUrl: 'partials/tandvardsradsla.html'
 			}).
 
 
