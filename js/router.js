@@ -56,6 +56,15 @@ angular.module('bRouter', [
 			when('/behandlingar/tandvardsradsla', {
 				templateUrl: 'partials/tandvardsradsla.html'
 			}).
+			when('/behandlingar/incognito', {
+				templateUrl: 'partials/incognito.html'
+			}).
+			when('/behandlingar/inman', {
+				templateUrl: 'partials/inman.html'
+			}).
+			when('/behandlingar/invisalign', {
+				templateUrl: 'partials/invisalign.html'
+			}).
 
 
 
