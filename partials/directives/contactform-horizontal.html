@@ -1,3 +1,7 @@
+<h3 ng-show="success" class="text-center">
+	Tack, vi återkommer!
+</h3>
+
 <form class="row">
 	<div class="col-md-4">
 		<h3>Ring <span class="btn btn-round btn-white"><a href="tel:031138304">031-138304</a></span> för tidsbokning, eller maila oss direkt.</h3>
@@ -5,19 +9,20 @@
 
 	<div class="col-md-4">
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Namn" name="namn" />
+			<input type="text" class="form-control" ng-model="user.namn" placeholder="Namn" name="namn" />
 		</div>
 
 		<div class="form-group">
-			<input type="tel" class="form-control" placeholder="Telefonnummer" name="telefon" />
+			<input type="tel" class="form-control" ng-model="user.telefon" placeholder="Telefonnummer" name="telefon" />
 		</div>
 
 		<div class="form-group">
-			<input type="email" class="form-control" placeholder="E-post" name="epost" />
+			<input type="email" class="form-control" ng-model="user.epost" placeholder="E-post" name="epost" />
 		</div>
 
 		<div class="form-group">
-			<select name="klinik" class="form-control">
+			<select ng-model="user.mottagning" name="klinik" class="form-control">
+				<option value="" selected default>Klinik</option>
 				<option>Olskroken</option>
 				<option>Redbergsplatsen</option>
 			</select>
@@ -25,13 +30,12 @@
 	</div>
 
 	<div class="col-md-4">
-
 		<div class="form-group">
-			<textarea class="form-control" placeholder="Önskemål om tider" name="text"></textarea>
+			<textarea class="form-control" ng-model="user.meddelande" placeholder="Önskemål om tider" name="text"></textarea>
 		</div>
 
 		<div class="form-group">
-			<button type="submit" ng-click="" class="btn btn-yellow form-control">Kontakta oss</button>
+			<button type="submit" ng-click="submit(user)" class="btn btn-yellow form-control">Kontakta oss</button>
 		</div>
-	<div
+	<div>
 </form>

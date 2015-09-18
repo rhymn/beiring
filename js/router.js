@@ -6,13 +6,16 @@ angular.module('bRouter', [
 		$routeProvider.
 			when('/', {
 				templateUrl: 'partials/start.html',
-				controller: 'StartCtrl'
+				controller: 'StartCtrl',
+				title: 'Start'
 			}).
 			when('/akut', {
-				templateUrl: 'partials/akut.html'
+				templateUrl: 'partials/akut.html',
+				title: 'Akut'
 			}).
 			when('/behandlingar', {
-				templateUrl: 'partials/behandlingar.html'
+				templateUrl: 'partials/behandlingar.html',
+				title: 'Behandlingar'
 			}).
 			when('/behandlingar/bettskena', {
 				templateUrl: 'partials/bettskena.html'

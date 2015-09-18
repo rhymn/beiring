@@ -1,6 +1,5 @@
 angular.module('bDirectives', [])
 
-
 .directive('navigation', ['$location', function($location) {
 	return {
 		link: function(scope, element) {
@@ -18,11 +17,24 @@ angular.module('bDirectives', [])
 }])
 
 
-.directive('akutForm', ['$rootScope', '$location', function($rootScope, $location) {
+.directive('akutForm', ['$rootScope', '$location', '$http', function($rootScope, $location, $http) {
 	return {
 		restrict: 'A',
 		templateUrl: 'partials/directives/akut-form.html',
 		link: function($scope, $element, $attr){
+			$scope.submit = function(user){
+				user.type = 'Akut';
+
+				$http
+					.post('http://www.beiringtandklinik.se/newsite/form.php', user)
+					.then(function(response) {
+						$scope.success = true;
+					}, function(response) {
+						$scope.fail = true;
+					});
+
+				ga('send', 'event', 'button', 'click', 'akut-form');
+			}
 		}
 	}
 }])
@@ -33,36 +45,62 @@ angular.module('bDirectives', [])
 		templateUrl: 'partials/directives/call-me-form.html',
 		link: function($scope, $element, $attr){
 			$scope.submit = function(user){
+				user.type = 'Ring mig';
+
 				$http
-					.post('http://www.beiringtandklinik.se/newsite/form.php')
+					.post('http://www.beiringtandklinik.se/newsite/form.php', user)
 					.then(function(response) {
-						console.log(response.data);
-						$scope.status = response.status;
-						$scope.data = response.data;
+						$scope.success = true;
 					}, function(response) {
-						console.log(response.data);
-						$scope.data = response.data || "Request failed";
-						$scope.status = response.status;
+						$scope.fail = true;
 					});
+
+				ga('send', 'event', 'button', 'click', 'ring-mig-form');
 			}
 		}
 	}
 }])
 
-.directive('contactVertical', ['$rootScope', '$location', function($rootScope, $location) {
+.directive('contactVertical', ['$rootScope', '$location', '$http', function($rootScope, $location, $http) {
 	return {
 		restrict: 'A',
 		templateUrl: 'partials/directives/contactform-vertical.html',
 		link: function($scope, $element, $attr){
+			$scope.submit = function(user){
+				user.type = 'Kontakt';
+
+				$http
+					.post('http://www.beiringtandklinik.se/newsite/form.php', user)
+					.then(function(response) {
+						$scope.success = true;
+					}, function(response) {
+						$scope.fail = true;
+					});
+
+				ga('send', 'event', 'button', 'click', 'contact-form');
+			}
 		}
 	}
 }])
 
-.directive('contactHorizontal', ['$rootScope', '$location', function($rootScope, $location) {
+.directive('contactHorizontal', ['$rootScope', '$location', '$http', function($rootScope, $location, $http) {
 	return {
 		restrict: 'A',
 		templateUrl: 'partials/directives/contactform-horizontal.html',
 		link: function($scope, $element, $attr){
+			$scope.submit = function(user){
+				user.type = 'Kontakt';
+
+				$http
+					.post('http://www.beiringtandklinik.se/newsite/form.php', user)
+					.then(function(response) {
+						$scope.success = true;
+					}, function(response) {
+						$scope.fail = true;
+					});
+
+				ga('send', 'event', 'button', 'click', 'contact-form');
+			}
 		}
 	}
 }]);
