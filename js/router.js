@@ -7,15 +7,15 @@ angular.module('bRouter', [
 			when('/', {
 				templateUrl: 'partials/start.html',
 				controller: 'StartCtrl',
-				title: 'Start'
+				title: 'Tandläkare Göteborg - Beiring Tandklinik'
 			}).
 			when('/akut', {
 				templateUrl: 'partials/akut.html',
-				title: 'Akut'
+				title: 'Akut tandvård i Göteborg - Beiring Tandklinik'
 			}).
 			when('/behandlingar', {
 				templateUrl: 'partials/behandlingar.html',
-				title: 'Behandlingar'
+				title: 'Behandlingar tandvård Göteborg - Beiring Tandklinik'
 			}).
 			when('/behandlingar/bettskena', {
 				templateUrl: 'partials/bettskena.html'
@@ -65,8 +65,7 @@ angular.module('bRouter', [
 			when('/behandlingar/invisalign', {
 				templateUrl: 'partials/invisalign.html'
 			}).
-
-
+			
 
 			otherwise({
 				redirectTo: '/'
