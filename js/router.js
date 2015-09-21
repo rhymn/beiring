@@ -18,52 +18,68 @@ angular.module('bRouter', [
 				title: 'Behandlingar tandvård Göteborg - Beiring Tandklinik'
 			}).
 			when('/behandlingar/bettskena', {
-				templateUrl: 'partials/bettskena.html'
+				templateUrl: 'partials/bettskena.html',
+				title: ''
 			}).
 			when('/tandreglering', {
-				templateUrl: 'partials/tandreglering.html'
+				templateUrl: 'partials/tandreglering.html',
+				title: ''
 			}).
 			when('/vardgivare', {
-				templateUrl: 'partials/vardgivare.html'
+				templateUrl: 'partials/vardgivare.html',
+				title: ''
 			}).
 			when('/priser', {
-				templateUrl: 'partials/priser.html'
+				templateUrl: 'partials/priser.html',
+				title: ''
 			}).
 			when('/om', {
-				templateUrl: 'partials/about.html'
+				templateUrl: 'partials/about.html',
+				title: ''
 			}).
 			when('/behandlingar/forebyggande-tandvard-och-tandhygienist', {
-				templateUrl: 'partials/forebyggande-tandvard-och-tandhygienist.html'
+				templateUrl: 'partials/forebyggande-tandvard-och-tandhygienist.html',
+				title: ''
 			}).
 			when('/behandlingar/allman-tandvard', {
-				templateUrl: 'partials/allman-tandvard.html'
+				templateUrl: 'partials/allman-tandvard.html',
+				title: ''
 			}).
 			when('/behandlingar/tandblekning', {
-				templateUrl: 'partials/tandblekning.html'
+				templateUrl: 'partials/tandblekning.html',
+				title: ''
 			}).
 			when('/behandlingar/visdomtandskirurgi', {
-				templateUrl: 'partials/visdomtandskirurgi.html'
+				templateUrl: 'partials/visdomtandskirurgi.html',
+				title: ''
 			}).
 			when('/behandlingar/tandimplantat', {
-				templateUrl: 'partials/tandimplantat.html'
+				templateUrl: 'partials/tandimplantat.html',
+				title: ''
 			}).
 			when('/behandlingar/tandreglering', {
-				templateUrl: 'partials/tandreglering.html'
+				templateUrl: 'partials/tandreglering.html',
+				title: ''
 			}).
 			when('/behandlingar/estetisk-tandvard', {
-				templateUrl: 'partials/estetisk-tandvard.html'
+				templateUrl: 'partials/estetisk-tandvard.html',
+				title: ''
 			}).
 			when('/behandlingar/tandvardsradsla', {
-				templateUrl: 'partials/tandvardsradsla.html'
+				templateUrl: 'partials/tandvardsradsla.html',
+				title: ''
 			}).
 			when('/behandlingar/incognito', {
-				templateUrl: 'partials/incognito.html'
+				templateUrl: 'partials/incognito.html',
+				title: ''
 			}).
 			when('/behandlingar/inman', {
-				templateUrl: 'partials/inman.html'
+				templateUrl: 'partials/inman.html',
+				title: ''
 			}).
 			when('/behandlingar/invisalign', {
-				templateUrl: 'partials/invisalign.html'
+				templateUrl: 'partials/invisalign.html',
+				title: ''
 			}).
 			
 

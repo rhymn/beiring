@@ -217,7 +217,6 @@ li{
 
 .tile .box{
 	background-color: #DDD;	
-	height: 150px;
 	max-width: 300px;
 }
 
@@ -240,7 +239,7 @@ a, button, a:focus, button:focus{
 	text-decoration: none !important;
 }
 
-button{
+.btn{
 	text-transform: uppercase;
 	box-shadow: none !important;
 	border: none;
