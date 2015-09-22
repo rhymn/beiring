@@ -23,6 +23,6 @@
 
 
 	<div class="form-group">
-		<button type="submit" ng-click="submit(user)" class="btn btn-red form-control" onClick="ga('send', 'event', { eventCategory: 'AKUT contact', eventAction: 'AKUT help request', eventLabel: 'AKUT Contact Form', eventValue: 1000});"ng-disabled="form.epost.$pristine || form.epost.$dirty && form.epost.$invalid">Ring mig</textarea>
+		<button type="submit" ng-click="submit(user)" class="btn btn-red form-control" ng-disabled="form.epost.$pristine || form.epost.$dirty && form.epost.$invalid">Ring mig</textarea>
 	</div>
 </form>
