@@ -6,7 +6,6 @@ angular.module('bRouter', [
 		$routeProvider.
 			when('/', {
 				templateUrl: 'partials/start.html',
-				controller: 'StartCtrl',
 				title: 'Tandläkare Göteborg - Beiring Tandklinik'
 			}).
 			when('/akut', {
@@ -81,8 +80,6 @@ angular.module('bRouter', [
 				templateUrl: 'partials/invisalign.html',
 				title: ''
 			}).
-			
-
 			otherwise({
 				redirectTo: '/'
 			});

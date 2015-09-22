@@ -1,12 +1,12 @@
 var beiring = angular.module('beiring', [
-	'bControllers',
 	'bDirectives',
 	'bRouter'
 ])
 
 .config(['$locationProvider', function ($locationProvider) {
-    $locationProvider.html5Mode(true);
-    $locationProvider.hashPrefix('!');
+    $locationProvider
+    	.html5Mode(true)
+    	.hashPrefix('!');
 }])
 
 .run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
