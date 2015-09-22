@@ -1,7 +1,7 @@
 <h4>Fyll i dina uppgifter så ringer vi upp dig snarast!</h4>
 
 <h3 ng-show="success" class="text-center">
-	Tack, vi kontaktar dig snarast!
+	Tack, vi kontaktar dig snarast
 </h3>
 
 <form ng-hide="success" name="form">
@@ -23,6 +23,6 @@
 
 
 	<div class="form-group">
-		<button type="submit" ng-click="submit(user)" class="btn btn-red form-control" ng-disabled="form.epost.$pristine || form.epost.$dirty && form.epost.$invalid">Ring mig</textarea>
+		<button type="submit" ng-click="submit(user)" class="btn btn-red form-control" onClick="ga('send', 'event', { eventCategory: 'AKUT contact', eventAction: 'AKUT help request', eventLabel: 'AKUT Contact Form', eventValue: 1000});"ng-disabled="form.epost.$pristine || form.epost.$dirty && form.epost.$invalid">Ring mig</textarea>
 	</div>
 </form>
