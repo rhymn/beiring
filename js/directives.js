@@ -26,7 +26,7 @@ angular.module('bDirectives', [])
 				user.type = 'Akut';
 
 				$http
-					.post('http://www.beiringtandklinik.se/newsite/form.php', user)
+					.post('//www.beiringtandklinik.se/form.php', user)
 					.then(function(response) {
 						$scope.success = true;
 					}, function(response) {
@@ -48,7 +48,7 @@ angular.module('bDirectives', [])
 				user.type = 'Ring mig';
 
 				$http
-					.post('http://www.beiringtandklinik.se/newsite/form.php', user)
+					.post('//www.beiringtandklinik.se/form.php', user)
 					.then(function(response) {
 						$scope.success = true;
 					}, function(response) {
@@ -70,7 +70,7 @@ angular.module('bDirectives', [])
 				user.type = 'Kontakt';
 
 				$http
-					.post('http://www.beiringtandklinik.se/newsite/form.php', user)
+					.post('//www.beiringtandklinik.se/form.php', user)
 					.then(function(response) {
 						$scope.success = true;
 					}, function(response) {
@@ -92,7 +92,7 @@ angular.module('bDirectives', [])
 				user.type = 'Kontakt';
 
 				$http
-					.post('http://www.beiringtandklinik.se/newsite/form.php', user)
+					.post('//www.beiringtandklinik.se/form.php', user)
 					.then(function(response) {
 						$scope.success = true;
 					}, function(response) {
