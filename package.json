@@ -16,7 +16,14 @@
     "url": "https://github.com/rhymn/beiring/issues"
   },
   "homepage": "https://github.com/rhymn/beiring",
-  "dependencies": {
-    "browser-sync": "^2.9.2"
+  "devDependencies": {
+    "express": "*",
+    "browser-sync": "*",
+    "grunt": "*",
+    "grunt-browser-sync": "*",
+    "grunt-cli": "*",
+    "grunt-concurrent": "*",
+    "grunt-shell": "*",
+    "grunt-html-snapshot": "*"
   }
 }
