@@ -9,6 +9,7 @@ body{
 	-webkit-font-smoothing: antialiased;
 }
 
+
 /*
  *
  * SECTIONS
@@ -16,22 +17,70 @@ body{
  *
  */
 
-section{
+.opaque{
+	background-color: rgba(96, 196, 203, 0.6);
+	min-height: 500px;
+	padding-top: 10px;
+}
+
+
+section, footer{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+section div.jumbotron{
+	margin: 0 auto;
+}
+
+
+.narrow{
+	max-width: 900px;	
+	margin: 0 auto;
+}
+
+.form-container{
+	max-width: 300px;
 }
 
 
 section.splash{
-	height: 400px;
+	padding-top: 0;
+	padding-bottom: 0;
+	min-height: 500px;
 	color: white;
 	background-color: #60C4CB;
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.splash .menu{
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: #AF9;
-	padding-right: 0;
+.menu{
+	position: fixed;
+	right: 0;
+	top: 100px;
 }
+
+.menu button{
+	margin-bottom: 6px;
+}
+
+.menu-padding{
+	padding-right: 120px;
+}
+
+section.mouth{
+	padding-top: 0;
+	padding-bottom: 0;
+	min-height: 500px;
+	color: white;
+	background-color: #60C4CB;
+	background-image: url(../img/mouth.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
 
 section.white{
 	color: #222;
@@ -48,13 +97,84 @@ section.light{
 	background-color: #93DEE3;
 }
 
+
+.light h1, 
+.light h2, 
+.light h3, 
+.light h4, 
+.light h5,
+.light i,
+.dark-text{
+	color: #13A5AF;
+} 
+
+.light-text{
+	color: white !important;
+} 
+
+
 section.medium{
 	color: white;
 	background-color: #60C4CB;
 }
 
+.chair-1{
+	padding: 50px 50px 50px 0;
+	margin-left: -70px;
+}
 
 
+.chair-2{
+	padding: 50px 0 50px 50px;
+}
+
+.person{
+
+}
+
+.person h4{
+	color: #13A5AF;	
+}
+
+.person img{
+	
+}
+
+/*
+ * COLLAPSE
+ *
+ *
+ */
+.panel,
+.panel, .panel-default>.panel-heading,
+.panel-collapse>.panel-body,
+.panel-group .panel-heading+.panel-collapse>.panel-body{
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	padding-left: 0;
+}
+
+
+/*
+ *
+ *
+ */
+.modal>.modal-dialog>.modal-content input,
+.modal>.modal-dialog>.modal-content textarea{
+	background-color: #EEE;
+}
+
+.modal>.modal-dialog>.modal-content{
+	border: none;
+	box-shadow: none !important;
+	border-radius: 0;
+}
+
+.modal>.modal-dialog>.modal-content>.modal-header,
+.modal>.modal-dialog>.modal-content>.modal-footer{
+	border: none;
+}
 
 /*
  *
@@ -63,8 +183,16 @@ section.medium{
  *
  */
 
-#content{
+a{
+	text-decoration: none !important;
+}
 
+a[href^="tel:"]{
+	color: inherit !important;
+	background-color: inherit !important;
+}
+
+form{
 }
 
 ul{
@@ -80,6 +208,23 @@ li{
 }
 
 
+.tile{
+}
+
+.tile h3{
+	color: #13A5AF;
+}
+
+.tile .box{
+	background-color: #DDD;	
+	max-width: 300px;
+}
+
+.tile .caption{
+	margin-top: 20px;
+}
+
+
 /*
  *
  *
@@ -88,9 +233,23 @@ li{
  *
  */
 
-button{
-	text-transform: uppercase;
+/* Chrome FFS */
+a, button, a:focus, button:focus{
+	outline: 0 !important;
+	text-decoration: none !important;
 }
+
+.btn{
+	text-transform: uppercase;
+	box-shadow: none !important;
+	border: none;
+
+}
+
+.btn.disabled, .btn[disabled]{
+	color: #222;
+}
+
 
 .btn-yellow{
 	color: white;
@@ -121,6 +280,20 @@ button{
 
 
 
+/*
+ *
+ *
+ */
+input, textarea, select{
+	box-shadow: none !important;
+	border: none !important;	
+}
+
+input,
+textarea {
+  font-size: 16px;
+}
+
 
 /*
  *
@@ -130,15 +303,40 @@ button{
  *
  */
 
+body { padding-top: 90px; }
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover{
+	border: none;
+	background-color: #FFF;
+}
+
 .navbar{
 	background-color: #FFF;
 	border: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #AAA;
 }
 
-.navbar .navbar-nav>li>a{
-	color: #13A5AF;
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover{
+	background-color: transparent;
+	color: #ffc075 !important;
 }
 
+.navbar a:hover{
+	color: #ffc075 !important;
+}
+
+.navbar a{
+	color: #13A5AF !important;
+}
+
+.navbar-brand{
+	padding: 5px;
+}
 
 
 /*
@@ -152,4 +350,8 @@ button{
 footer{
 	color: white;
 	background-color: #24A1AC;
+}
+
+footer a{
+	color: white;
 }

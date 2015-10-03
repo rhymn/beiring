@@ -1,0 +1,28 @@
+<h4>Fyll i dina uppgifter så ringer vi upp dig snarast!</h4>
+
+<h3 ng-show="success" class="text-center">
+	Tack, vi kontaktar dig snarast
+</h3>
+
+<form ng-hide="success" name="form">
+	<div class="form-group">
+		<input type="text" class="form-control" ng-model="user.namn" placeholder="Namn" name="namn" />
+	</div>
+
+	<div class="form-group">
+		<input type="tel" class="form-control" ng-model="user.telefon" placeholder="Telefonnummer" name="telefon" />
+	</div>
+
+	<div class="form-group">
+		<input type="text" class="form-control" ng-model="user.personnummer" placeholder="Personnummer" name="pnr" />
+	</div>
+
+	<div class="form-group">
+		<input type="email" class="form-control" ng-model="user.epost" placeholder="E-post" name="epost" />
+	</div>
+
+
+	<div class="form-group">
+		<button type="submit" ng-click="submit(user)" class="btn btn-red form-control" ng-disabled="form.epost.$pristine || form.epost.$dirty && form.epost.$invalid">Ring mig</textarea>
+	</div>
+</form>

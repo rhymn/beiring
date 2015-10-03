@@ -1,80 +1,93 @@
 <section class="splash container-fluid">
-	<div class="row">
-		<div class="col-md-5">
-			<h3>Ring <button class="btn btn-round btn-white">031-138304</button> för tidsbokning, eller maila oss direkt.</h3>
-			<div contact-form></div>
-		</div>
-		<div class="col-md-7 menu">
-			<ul class="pull-right">
-				<li><button class="btn btn-round-left btn-red"><i class="fa fa-bolt"></i> Akut</button></li>
-				<li><button class="btn btn-round-left btn-yellow"><i class="fa fa-mobile"></i> Ring mig</button></li>
-				<li><button class="btn btn-round-left btn-yellow"><i class="fa fa-pencil"></i> Lista mig</button></li>
-			</ul>
+	<div class="narrow">
+		<div class="row">
+			<div class="col-md-5 opaque">
+				<div class="form-container">
+					<h3>Ring <span class="btn btn-round btn-white"><a href="tel:031138304">031-138304</a></span> för tidsbokning, eller maila oss direkt.</h3>
+					<div contact-vertical></div>
+				</div>
+			</div>
+			<div class="col-md-7">
+			</div>
 		</div>
 	</div>
 </section>
 
 
 <section class="white container-fluid">
-	<div class="jumbotron text-center">
-		<h1>Letar du tandläkare i Göteborg?</h1>
-		<p>
-			Beiring tandklinik vill skapa långsiktiga patientrelationer för att bibehålla och återskapa friska munnar. Allt du behver inom tandvård finns samlat hos oss: akuttandläkare, specialister och tendtekniker.
-		</p>
+	<div class="narrow">
+		<div class="jumbotron text-center">
+			<h1>Letar du tandläkare i Göteborg?</h1>
+			<p>
+				Vi arbetar för långsiktiga patientrelationer genom att bibehålla och  återskapa friska munnar. Allt du behöver inom tandvård finns samlat här hos oss – akuttandläkare, specialister och tandtekniker. Välkommen till Beiring Tandklinik!
+			</p>
 
-		<p>
-			<button class="btn btn-round btn-red"><i class="fa fa-bolt"></i> Akut</button>
-			<button class="btn btn-round btn-yellow"><i class="fa fa-mobile"></i> Ring mig</button>
-			<button class="btn btn-round btn-yellow"><i class="fa fa-pencil"></i> Lista mig</button>			
-		</p>
+			<p>
+				<button data-toggle="modal" data-target="#akut-modal" class="btn btn-round btn-red"><i class="fa fa-bolt"></i> Akut</button>
+				<button data-toggle="modal" data-target="#ring-mig-modal" class="btn btn-round btn-yellow"><i class="fa fa-mobile"></i> Ring mig</button>
+				<button data-toggle="modal" data-target="#lista-mig-modal" class="btn btn-round btn-yellow"><i class="fa fa-pencil"></i> Lista mig</button>			
+			</p>
 
+		</div>
 	</div>
 </section>
 
 
 <section class="light container-fluid">
-	<div class="row">
-		<div class="col-md-6">
-			<p>Östra Hamngatan 52</p>
-		</div>			
+	<div class="narrow">
+		<div class="row">
+			<div class="col-md-6 text-center">
+				<i class="fa fa-map-marker fa-3x"></i>
+				<h4>Östra Hamngatan 52</h4>
+				<p><strong>Mån</strong>-Tis 7-20 | <strong>Ons</strong> 8-17 | <strong>Tors</strong> 8-18.30</p>
+				<p><strong>Fre</strong> 7.30-14.30 | <strong>Lör</strong> 10-14</p>
+				<p><strong>Tel</strong>: <a href="tel:031138304">031-138304</a></p>
+			</div>			
 
-		<div class="col-md-6">
-			<p>Redbergsvägen 13 A</p>				
-		</div>			
+			<div class="col-md-6 text-center">
+				<i class="fa fa-map-marker fa-3x"></i>
+				<h4>Redbergsvägen 13 A</h4>
+				<p><strong>Mån</strong>8-19 | <strong>Tis</strong>8-20 | <strong>Ons</strong> 8-18 | <strong>Tors</strong> 8-15.30</p>
+				<p><strong>Fre</strong> 8-15.30 (Telefontider 8-15.30)</p>
+				<p><strong>Tel</strong>: <a href="tel:031138304">031-138304</a></p>
+			</div>			
+		</div>
 	</div>
 </section>
 
 
 <section class="medium container-fluid">
-	<div class="row">
-		<div class="col-md-4 text-center">
-			<img class="img-responsive center-block" src="img/tooth.png" />
+	<div class="narrow">
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<img class="img-responsive center-block" src="img/chair.png" />
 
-			<p>Göteborgs bästa tandläkare</p>
+				<h3>Erfarna tandläkare och specialistkompetenser</h3>
 
-			<p>
-				<button class="btn btn-round btn-yellow">Läs mer om oss</button>
-			</p>
-		</div>			
+				<p>
+					<a href="om" class="btn btn-round btn-yellow">Läs mer om oss</a>
+				</p>
+			</div>			
 
-		<div class="col-md-4 text-center">
-			<img class="img-responsive center-block" src="img/tooth.png" />
+			<div class="col-md-4 text-center">
+				<img class="img-responsive center-block" src="img/tooth.png" />
 
-			<p>Vi har Göteborgs tandregleringsexperter</p>
+				<h3>Expertkunskaper inom tandreglering</h3>
 
-			<p>
-				<button class="btn btn-round btn-white">Läs mer om tandreglering</button>
-			</p>
-		</div>			
+				<p>
+					<a href="behandlingar/tandreglering" class="btn btn-round btn-white">Läs mer om tandreglering</a>
+				</p>
+			</div>			
 
-		<div class="col-md-4 text-center">
-			<img class="img-responsive center-block" src="img/tooth.png" />
+			<div class="col-md-4 text-center">
+				<img class="img-responsive center-block" src="img/pig_round.png" />
 
-			<p>Bra priser och finansieringsmöjligheter</p>
+				<h3>Bra priser och finansieringslösningar</h3>
 
-			<p>
-				<button class="btn btn-round btn-white">Läs mer om finansiering</button>
-			</p>
-		</div>			
+				<p>
+					<a href="priser" class="btn btn-round btn-white">Läs mer om finansiering</a>
+				</p>
+			</div>			
+		</div>
 	</div>
 </section>

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="beiring">
 	<head>
+		<base href="/">
 		<meta charset="utf-8">
+		<meta name="fragment" content="!">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Beiring website</title>
+		<title>{{title || 'Vi utför all form av tandvård i Göteborg | Beiring Tandklinik'}}</title>
 
 		<!-- Bootstrap -->
 		<link href="vendor/css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,600">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 		<link href="css/style.css" rel="stylesheet">
 
@@ -24,19 +26,56 @@
 		<!-- The Application -->
 		<script src="js/app.js"></script>
 		<script src="js/router.js"></script>
-		<script src="js/controllers.js"></script>
 		<script src="js/directives.js"></script>
 	</head>
 
 	<body>
 		<div ng-include="'partials/navigation.html'"></div>
 
-		<div id="content" class="" ng-view>
+		<div id="content" ng-view>
 		</div>
 
 		<footer ng-include="'partials/footer.html'"></footer>
 
+		<div class="menu hidden-sm hidden-xs">
+			<button data-toggle="modal" data-target="#akut-modal" class="btn btn-round-left btn-red pull-right"><i class="fa fa-bolt"></i> Akut</button><br />
+			<button data-toggle="modal" data-target="#ring-mig-modal" class="btn btn-round-left btn-yellow pull-right"><i class="fa fa-mobile"></i> Ring mig</button><br />
+			<button data-toggle="modal" data-target="#lista-mig-modal" class="btn btn-round-left btn-yellow"><i class="fa fa-pencil"></i> Lista mig</button><br />
+		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="vendor/js/bootstrap.min.js"></script>
+
+
+
+
+		<!-- Google Analytics -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-34768519-1', 'auto');
+		ga('send', 'pageview');
+
+		</script>
+		<!-- End Google Analytics -->
+
+
+
+
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.4";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<div ng-include="'partials/akut-modal.html'"></div>
+		<div ng-include="'partials/ring-mig-modal.html'"></div>
+		<div ng-include="'partials/lista-mig-modal.html'"></div>
 	</body>
 </html>

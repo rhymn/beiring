@@ -1,0 +1,29 @@
+{
+  "name": "beiring",
+  "version": "1.0.0",
+  "description": "Beiring website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rhymn/beiring.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhymn/beiring/issues"
+  },
+  "homepage": "https://github.com/rhymn/beiring",
+  "devDependencies": {
+    "express": "*",
+    "browser-sync": "*",
+    "grunt": "*",
+    "grunt-browser-sync": "*",
+    "grunt-cli": "*",
+    "grunt-concurrent": "*",
+    "grunt-shell": "*",
+    "grunt-html-snapshot": "*"
+  }
+}

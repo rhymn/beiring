@@ -1,0 +1,25 @@
+<h4>Fyll i dina uppgifter så ringer vi snart upp dig</h4>
+
+<h3 ng-show="success" class="text-center">
+	Tack, vi ringer dig!
+</h3>
+
+<form ng-hide="success" class="row" name="form">
+	<div class="col-md-4">
+		<div class="form-group">
+			<input type="text" class="form-control" ng-model="user.namn" placeholder="Namn" name="namn" />
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="form-group">
+			<input type="tel" class="form-control" ng-model="user.telefon" placeholder="Telefonnummer" name="telefon" />
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="form-group">
+			<button type="submit" ng-click="submit(user)" class="btn btn-yellow form-control" ng-disabled="form.telefon.$pristine || form.telefon.$dirty && form.telefon.$invalid">Ring mig</button>
+		</div>
+	<div>
+</form>
