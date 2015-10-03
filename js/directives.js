@@ -33,7 +33,8 @@ angular.module('bDirectives', [])
 						$scope.fail = true;
 					});
 
-				ga('send', 'event', 'button', 'click', 'akut-form');
+				// ga('send', 'event', 'button', 'click', 'akut-form');
+				ga('send', 'event', { eventCategory: 'AKUT Contact', eventAction: 'AKUT Contact request', eventLabel: 'AKUT', eventValue: 1000});
 			}
 		}
 	}
@@ -55,7 +56,8 @@ angular.module('bDirectives', [])
 						$scope.fail = true;
 					});
 
-				ga('send', 'event', 'button', 'click', 'ring-mig-form');
+				ga('send', 'event', { eventCategory: 'RING', eventAction: 'RING request', eventLabel: 'RING form', eventValue: 1000});
+				// ga('send', 'event', 'button', 'click', 'ring-mig-form');
 			}
 		}
 	}
@@ -77,7 +79,8 @@ angular.module('bDirectives', [])
 						$scope.fail = true;
 					});
 
-				ga('send', 'event', 'button', 'click', 'contact-form');
+				ga('send', 'event', { eventCategory: 'LISTED', eventAction: 'LISTED request', eventLabel: 'LISTED form', eventValue: 1000});
+				// ga('send', 'event', 'button', 'click', 'contact-form');
 			}
 		}
 	}
@@ -99,7 +102,8 @@ angular.module('bDirectives', [])
 						$scope.fail = true;
 					});
 
-				ga('send', 'event', 'button', 'click', 'contact-form');
+				// ga('send', 'event', 'button', 'click', 'contact-form');
+				ga('send', 'event', { eventCategory: 'LISTED', eventAction: 'LISTED request', eventLabel: 'LISTED form', eventValue: 1000});
 			}
 		}
 	}
