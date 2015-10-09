@@ -61,8 +61,10 @@ section.splash{
 	top: 100px;
 }
 
-.menu button{
-	margin-bottom: 6px;
+.menu > button{
+	float: right;
+	clear: right;
+	margin-bottom: 5px;
 }
 
 .menu-padding{
