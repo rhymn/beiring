@@ -3,7 +3,6 @@
 	<head>
 		<base href="/">
 		<meta charset="utf-8">
-		<meta name="fragment" content="!">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title ng-bind="title || 'Vi utför all form av tandvård i Göteborg | Beiring Tandklinik'">Vi utför all form av tandvård i Göteborg | Beiring Tandklinik</title>
@@ -23,13 +22,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.min.js"></script>
 
+		<script src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+
 		<!-- The Application -->
 		<script src="js/app.js"></script>
 		<script src="js/router.js"></script>
 		<script src="js/directives.js"></script>
+
+
 	</head>
 
 	<body>
+
+
 		<div ng-include="'partials/navigation.html'"></div>
 
 		<div id="content" ng-view>
@@ -77,5 +82,7 @@
 		<div ng-include="'partials/akut-modal.html'"></div>
 		<div ng-include="'partials/ring-mig-modal.html'"></div>
 		<div ng-include="'partials/lista-mig-modal.html'"></div>
+
+
 	</body>
 </html>

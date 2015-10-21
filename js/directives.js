@@ -33,8 +33,12 @@ angular.module('bDirectives', [])
 						$scope.fail = true;
 					});
 
-				// ga('send', 'event', 'button', 'click', 'akut-form');
+				// Trigger Event in GA
 				ga('send', 'event', { eventCategory: 'AKUT Contact', eventAction: 'AKUT Contact request', eventLabel: 'AKUT', eventValue: 1000});
+
+				// Trigger Conversion "Pixel"
+				$http.get('//www.googleadservices.com/pagead/conversion/948875852/?value=1000.00&amp;currency_code=SEK&amp;label=HzKZCMOexmAQzOS6xAM&amp;guid=ON&amp;script=0');
+
 			}
 		}
 	}
