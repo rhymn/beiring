@@ -99,6 +99,9 @@ section.light{
 	background-color: #93DEE3;
 }
 
+h1{
+	font-size: 32px !important;
+}
 
 .light h1, 
 .light h2, 

@@ -25,6 +25,7 @@ angular.module('bDirectives', [])
 			$scope.submit = function(user){
 				user.type = 'Akut';
 
+				/*
 				$http
 					.post('//www.beiringtandklinik.se/form.php', user)
 					.then(function(response) {
@@ -32,13 +33,17 @@ angular.module('bDirectives', [])
 					}, function(response) {
 						$scope.fail = true;
 					});
+				*/
+				$scope.success = true;
 
-				// Trigger Event in GA
+				// ga('send', 'event', 'button', 'click', 'akut-form');
 				ga('send', 'event', { eventCategory: 'AKUT Contact', eventAction: 'AKUT Contact request', eventLabel: 'AKUT', eventValue: 1000});
+				
+				// Alt 1
+				_as("send", "pageview", "http://www.beiringtandklinik.se/signup/akut");
 
-				// Trigger Conversion "Pixel"
+				// Alt 2
 				$http.get('//www.googleadservices.com/pagead/conversion/948875852/?value=1000.00&amp;currency_code=SEK&amp;label=HzKZCMOexmAQzOS6xAM&amp;guid=ON&amp;script=0');
-
 			}
 		}
 	}
@@ -61,7 +66,9 @@ angular.module('bDirectives', [])
 					});
 
 				ga('send', 'event', { eventCategory: 'RING', eventAction: 'RING request', eventLabel: 'RING form', eventValue: 1000});
-				// ga('send', 'event', 'button', 'click', 'ring-mig-form');
+
+				// $http.get('//www.googleadservices.com/pagead/conversion/948875852/?value=1000.00&amp;currency_code=SEK&amp;label=HzKZCMOexmAQzOS6xAM&amp;guid=ON&amp;script=0');
+
 			}
 		}
 	}
